@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>DRIPZFM — www.dripzfm.co — #CHARTS</title>
+    <meta name="google" content="notranslate" />
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="content-language" content="de" />
+    <link rel="icon" type="image/png" href="assets/img/fav.png" sizes="32x32" />
+    <meta charset="utf-8" />
+    <meta name="robots" content="INDEX,FOLLOW" />
+    <meta
+      name="keywords"
+      content="dripz fm, dripzfm, radio, internetradio, webradio, onlineradio, online radio hören, best music app, app, iphone, android, deutsch, german, germany, offizielle charts, offizielle deutsche charts, rap, raproyal, original"
+    />
+    <meta
+      name="description"
+      content="Beste Musik App für Charts, Rap und Dance. Kostenlos Radio hören mit 15+ Musik-Streams. #nightlife, #raproyal, #charts, #gaming und viele weitere. Höre auf verschiedenen Musik-Channels deinen Lieblingssound – täglich neu zusammengestellt von unseren Musikenthusiasten. Die besten Playlists für jede Tageszeit und für jede Stimmung. Und dass nonstop, kostenlos und ohne Werbung. Einfach einen Musik-Channel anklicken und los geht’s. Vergiss nicht, die REYFM App auf dein Smartphone zu laden. Geh jetzt in dein App Store!"
+    />
+    <meta property="og:title" content=" #CHARTS" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://www.dripzfm.co/img/icon_thumbnail_100x100.png"
+    />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="100" />
+    <meta property="og:image:height" content="100" />
+    <meta property="og:url" content="https://www.dripzfm.co/charts" />
+    <meta
+      property="og:description"
+      content="Beste Musik App für Charts, Rap und Gaming. Kostenlos Radio hören mit 15+ Musik-Streams. #original, #nightlife, #raproyal, #charts, #gaming und viele weitere. Höre auf verschiedenen Musik-Channels deinen Lieblingssound – täglich neu zusammengestellt von unseren Musikenthusiasten. Die besten Playlists für jede Tageszeit und für jede Stimmung. Und dass nonstop, kostenlos und ohne Werbung. Einfach einen Musik-Channel anklicken und los geht’s. Vergiss nicht, die REYFM App auf dein Smartphone zu laden. Geh jetzt in dein App Store!"
+    />
+    <meta property="og:locale" content="de_DE" />
+    <meta name="theme-color" content="#e371f8" />
+    <meta name="msapplication-navbutton-color" content="#e371f8" />
+    <meta name="msapplication-TileColor" content="#e371f8" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/style-v=1.4.8&snapshot=A5.css"
+    />
+    <script src="../cdn.dripzfm.co/js/jquery.min.js"></script>
+    <script src="../cdn.dripzfm.co/js/jquery-ui.min.js"></script>
+    <script src="../cdn.dripzfm.co/js/moment.min.js"></script>
+    <script src="../cdn.dripzfm.co/js/socket.io.js"></script>
+    <script src="../cdn.dripzfm.co/js/confetti.min.js"></script>
+    <script src="assets/js/app-v=1.4.8&snapshot=A5.js"></script>
+  </head>
+  <body id="original-page">
+    <!-- <button onclick="goBack()">Go Back</button> -->
+    <!-- 
+<script>
+function goBack() {
+  window.history.back();
+}
+</script> -->
+    <!-- <div id="header">
+    <div class="left">
+        <span id="back" style="color: #000" class="pointer">back</span>
+    </div>
+    <img alt="LOGO" id="logo" class="middle" src="../cdn.dripzfm.co/img/logo.png">
+    <div class="right">
+        <ul>
+            <li class="listItemInactive listItem"><a href="stat.html"><span id="all_listeners" class="listeners">566</span></a></li>
+            <span class="line"></span>
+                                <li class="listItemInactive listItem">
+                    <a title="Mit Discord anmmelden" href="https://www.dripzfm.co/login">
+                        <svg class="header-icon" enable-background="new 0 0 515.556 515.556" height="512" viewBox="0 0 515.556 515.556" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m257.778 0c-142.137 0-257.778 115.641-257.778 257.778s115.641 257.778 257.778 257.778 257.778-115.641 257.778-257.778-115.642-257.778-257.778-257.778zm140.412 390.282c-88.007-44.093-194.425-45.965-284.592-4.146-30.464-34.181-49.153-79.073-49.153-128.358 0-106.61 86.723-193.333 193.333-193.333s193.333 86.723 193.333 193.333c0 51.296-20.213 97.861-52.921 132.504z"></path><path d="m326.132 157.202c37.751 37.751 37.751 98.957 0 136.707s-98.957 37.751-136.707 0-37.751-98.957 0-136.707 98.956-37.751 136.707 0"></path></svg>
+                    </a>
+                </li>
+                        </ul>
+    </div>
+</div> -->
+
+    <div id="header">
+      <div class="left">
+        <span id="back" style="color: #000;" class="pointer">back</span>
+      </div>
+      <img
+        alt="LOGO"
+        id="logo"
+        class="middle"
+        src="../cdn.dripzfm.co/img/logo.png"
+      />
+      <div class="right">
+        <ul>
+          <li class="listItemInactive listItem">
+            <a href="stat.html"
+              ><span id="all_listeners" style="color: #000;" class="listeners"
+                >567</span
+              ></a
+            >
+          </li>
+          <span class="line"></span>
+          <li class="listItemInactive listItem">
+            <a
+              title="Mit Discord anmmelden"
+              href="https://www.dripzfm.co/login"
+            >
+              <svg
+                class="header-icon"
+                enable-background="new 0 0 515.556 515.556"
+                height="512"
+                viewBox="0 0 515.556 515.556"
+                width="512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m257.778 0c-142.137 0-257.778 115.641-257.778 257.778s115.641 257.778 257.778 257.778 257.778-115.641 257.778-257.778-115.642-257.778-257.778-257.778zm140.412 390.282c-88.007-44.093-194.425-45.965-284.592-4.146-30.464-34.181-49.153-79.073-49.153-128.358 0-106.61 86.723-193.333 193.333-193.333s193.333 86.723 193.333 193.333c0 51.296-20.213 97.861-52.921 132.504z"
+                ></path>
+                <path
+                  d="m326.132 157.202c37.751 37.751 37.751 98.957 0 136.707s-98.957 37.751-136.707 0-37.751-98.957 0-136.707 98.956-37.751 136.707 0"
+                ></path>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="radio-player">
+      <!--------------------Change Stream URL from Here-------------------->
+      <audio
+        id="radio"
+        src="https://nelly.streampanel.net/spradio/index.php?q=http://91.200.103.131:8003/http://91.200.103.131:8003"
+      ></audio>
+      <!-- ----------------------------------------------------------- -->
+      <div class="button">
+        <button id="play-btn"><img src="images/play.png" alt="play" /></button>
+        <button id="pause-btn">
+          <img src="images/pause.png" alt="pause" />
+        </button>
+      </div>
+
+      <div class="content">
+        <div class="live">
+          LIVE -
+          <i class="fas fa-headphones"></i> 482
+        </div>
+        <div class="chart-1">#CHARTS</div>
+        <div class="chart-2">ONLY THE CHARTS</div>
+      </div>
+      <div id="volume">
+        <input id="volume-bar" type="range" min="0" max="100" value="50" />
+      </div>
+    </div>
+    <script src="js/app.js"></script>
+
+    <div id="wave" class="waveWrapper waveAnimation">
+      <div class="waveWrapperInner bgTop">
+        <div
+          class="wave waveTop"
+          style="
+            background-image: url('https://cdn.reyfm.de/waves/wave-top-1.png?v=1.2');
+          "
+        ></div>
+      </div>
+      <div class="waveWrapperInner bgMiddle">
+        <div
+          class="wave waveMiddle"
+          style="
+            background-image: url('https://cdn.reyfm.de/waves/wave-mid-1.png?v=1.2');
+          "
+        ></div>
+      </div>
+      <div class="waveWrapperInner bgBottom">
+        <div
+          class="wave waveBottom"
+          style="
+            background-image: url('https://cdn.reyfm.de/waves/wave-bot-1.png?v=1.2');
+          "
+        ></div>
+      </div>
+    </div>
+  </body>
+</html>
