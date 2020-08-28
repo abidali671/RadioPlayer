@@ -9,7 +9,8 @@
 }
 
 #radio-player {
-  width: 750px;
+  max-width: 750px;
+  width: 90%;
   height: 200px;
   background: linear-gradient(to right, #3857c8, #e371f8);
   position: absolute;
@@ -93,4 +94,29 @@
   width: 15px;
   height: 15px;
   border-radius: 50%;
+}
+.header-icon {
+  max-width: 512px;
+  width: 100%;
+}
+@media (max-width: 650px) {
+  .chart-1 {
+    font-size: 30px;
+  }
+  .chart-2 {
+    font-size: 24px;
+  }
+  .button,
+  #play-btn,
+  #pause-btn {
+    width: 65px;
+    height: 65px;
+  }
+  #volume-bar {
+    width: 65px;
+  }
+
+  #radio-player {
+    padding: 5px 20px;
+  }
 }

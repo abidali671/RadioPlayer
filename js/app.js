@@ -10,6 +10,17 @@ volumeControl.addEventListener("mousemove", function () {
 });
 
 //
+pauseBtn.addEventListener("click", function () {
+  radio.pause();
+  pauseBtn.style.display = "none";
+  playBtn.style.display = "block";
+});
+
+playBtn.addEventListener("click", function () {
+  radio.play();
+  playBtn.style.display = "none";
+  pauseBtn.style.display = "block";
+});
 
 var playPromise = radio.play();
 
@@ -19,20 +30,12 @@ if (playPromise !== undefined) {
       // Automatic playback started!
       // Show playing UI.
       // We can now safely pause video...
-      pauseBtn.addEventListener("click", function () {
-        radio.pause();
-        pauseBtn.style.display = "none";
-        playBtn.style.display = "block";
-      });
-      playBtn.addEventListener("click", function () {
-        radio.play();
-        playBtn.style.display = "none";
-        pauseBtn.style.display = "block";
-      });
+
       radio.pause();
     })
     .catch((error) => {
       // Auto-play was prevented
       // Show paused UI.
+      radio.pause();
     });
 }
